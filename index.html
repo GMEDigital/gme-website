@@ -283,49 +283,26 @@
                 </div>
             </div>
             <div class="bg-white p-8 lg:p-10 rounded-[2rem] shadow-xl border border-slate-100">
-                <form id="contact-form" class="space-y-5">
+                <form id="whatsapp-form" class="space-y-5">
                     <div>
                         <label class="block text-sm font-bold text-navy mb-2">Nama Lengkap</label>
-                        <input type="text"
+                        <input type="text" id="contact-name"
                             class="w-full bg-background-gray border-none rounded-xl p-4 focus:ring-2 focus:ring-primary"
-                            placeholder="Contoh: Elyas Nur Faturrochim">
+                            placeholder="Contoh: Elyas Nur Faturrochim" required>
                     </div>
                     <div>
                         <label class="block text-sm font-bold text-navy mb-2">Email Bisnis</label>
-                        <input type="email"
+                        <input type="email" id="contact-email"
                             class="w-full bg-background-gray border-none rounded-xl p-4 focus:ring-2 focus:ring-primary"
-                            placeholder="elyasnf10@gmail.com">
+                            placeholder="elyasnf10@gmail.com" required>
                     </div>
-                    <form id="whatsapp-form" class="space-y-5">
-                        <div>
-                            <label class="block text-sm font-bold text-navy mb-2">Nama Lengkap</label>
-                            <input type="text" id="contact-name"
-                                class="w-full bg-background-gray border-none rounded-xl p-4 focus:ring-2 focus:ring-primary"
-                                placeholder="Contoh: Elyas Nur Faturrochim" required>
-                        </div>
-                        <div>
-                            <label class="block text-sm font-bold text-navy mb-2">Email Bisnis</label>
-                            <input type="email" id="contact-email"
-                                class="w-full bg-background-gray border-none rounded-xl p-4 focus:ring-2 focus:ring-primary"
-                                placeholder="elyasnf10@gmail.com" required>
-                        </div>
-                        <div>
-                            <label class="block text-sm font-bold text-navy mb-2">Pesan/Kebutuhan</label>
-                            <textarea id="contact-message" rows="4"
-                                class="w-full bg-background-gray border-none rounded-xl p-4 focus:ring-2 focus:ring-primary"
-                                placeholder="Jelaskan kebutuhan bisnis Anda..." required></textarea>
-                        </div>
-                        <button type="submit"
-                            class="w-full bg-navy hover:bg-navy-light text-white font-bold py-4 rounded-xl transition-all">Kirim
-                            Pesan</button>
-                    </form>
                     <div>
                         <label class="block text-sm font-bold text-navy mb-2">Pesan/Kebutuhan</label>
-                        <textarea rows="4"
+                        <textarea id="contact-message" rows="4"
                             class="w-full bg-background-gray border-none rounded-xl p-4 focus:ring-2 focus:ring-primary"
-                            placeholder="Jelaskan kebutuhan bisnis Anda..."></textarea>
+                            placeholder="Jelaskan kebutuhan bisnis Anda..." required></textarea>
                     </div>
-                    <button
+                    <button type="submit"
                         class="w-full bg-navy hover:bg-navy-light text-white font-bold py-4 rounded-xl transition-all">Kirim
                         Pesan</button>
                 </form>
