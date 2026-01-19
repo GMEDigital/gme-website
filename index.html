@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html class="light" lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Giat Muda Entrepreneur - Solusi Bisnis Digital</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#FF6B00",
+                        "primary-dark": "#E65100",
+                        "navy": "#0B1120",
+                        "navy-light": "#1E293B",
+                        "navy-accent": "#334155",
+                        "background-light": "#FFFFFF",
+                        "background-gray": "#F3F4F6",
+                    },
+                    fontFamily: { "display": ["Inter", "sans-serif"] },
+                },
+            },
+        }
+    </script>
+
+</head>
+
+<body class="bg-background-gray font-display antialiased text-slate-800">
+
+    <nav class="fixed w-full z-50 bg-navy/90 backdrop-blur-md border-b border-white/10 py-4">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <span class="font-extrabold text-white text-xl tracking-tight">GIAT MUDA <span
+                        class="text-primary">ENTREPRENEUR</span></span>
+            </div>
+            <div class="hidden lg:flex items-center gap-8 text-white/80 font-medium text-sm uppercase tracking-wider">
+                <a href="#home" class="hover:text-primary transition-colors">Beranda</a>
+                <a href="#tentang" class="hover:text-primary transition-colors">Tentang</a>
+                <a href="#layanan" class="hover:text-primary transition-colors">Layanan</a>
+                <a href="#mitra" class="hover:text-primary transition-colors">Kemitraan</a>
+                <a href="#kontak"
+                    class="bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-full transition-all font-bold">Konsultasi</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-white p-2">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+        <!-- Mobile Menu Container -->
+        <div id="mobile-menu"
+            class="hidden lg:hidden bg-navy border-t border-white/10 absolute w-full left-0 top-full p-6 flex-col gap-4 shadow-xl">
+            <a href="#home" class="text-white/80 hover:text-primary font-medium tracking-wider">Beranda</a>
+            <a href="#tentang" class="text-white/80 hover:text-primary font-medium tracking-wider">Tentang</a>
+            <a href="#layanan" class="text-white/80 hover:text-primary font-medium tracking-wider">Layanan</a>
+            <a href="#mitra" class="text-white/80 hover:text-primary font-medium tracking-wider">Kemitraan</a>
+            <a href="#kontak"
+                class="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-xl font-bold text-center">Konsultasi</a>
+        </div>
+    </nav>
+
+    <section id="home" class="relative bg-navy pt-32 lg:pt-48 pb-20 lg:pb-32 overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl -mr-20 -mt-20"></div>
+        <div class="max-w-6xl mx-auto px-6 relative z-10 flex flex-col items-center text-center">
+            <div
+                class="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-primary/20 border border-primary/50 mb-8">
+                <span class="relative flex h-3 w-3">
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+                </span>
+                <span class="text-xs lg:text-sm font-bold text-primary tracking-wide uppercase">Partner Pertumbuhan
+                    UMKM</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] tracking-tight mb-6">
+                Akselerasi Bisnis Anda <br class="hidden lg:block"> Melalui <span class="text-primary">Ekosistem
+                    Digital</span>
+            </h1>
+            <p class="text-slate-300 text-lg lg:text-xl leading-relaxed max-w-3xl mb-10">
+                GME membantu UMKM dan pengusaha muda bertransformasi melalui edukasi strategis, sistem penjualan yang
+                terstruktur, dan digital marketing tepat sasaran.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 w-full max-w-md">
+                <a href="#layanan"
+                    class="flex-1 bg-primary hover:bg-primary-dark text-white font-bold py-4 px-8 rounded-2xl shadow-[0_10px_20px_-5px_rgba(255,107,0,0.4)] transition-all flex items-center justify-center gap-2">
+                    Lihat Layanan <span class="material-symbols-outlined">trending_up</span>
+                </a>
+                <a href="#mitra"
+                    class="flex-1 bg-white/10 hover:bg-white/20 text-white font-bold py-4 px-8 rounded-2xl border border-white/20 transition-all flex items-center justify-center gap-2">
+                    Gabung Reseller
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="py-20 lg:py-32 px-6 bg-white">
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <div class="absolute inset-0 bg-primary/20 rounded-3xl blur-2xl transform translate-x-4 translate-y-4">
+                </div>
+                <div class="relative bg-navy rounded-3xl p-10 text-white border border-slate-700 overflow-hidden">
+                    <h3 class="text-3xl font-bold mb-4">Visi Kami</h3>
+                    <p class="text-slate-300 text-lg italic leading-relaxed">"Menjadi ekosistem pengembangan UMKM dan
+                        entrepreneur muda berbasis digital terbesar dan terpercaya di Indonesia."</p>
+                    <div class="mt-8 flex gap-4">
+                        <div class="bg-primary/20 p-3 rounded-xl"><span
+                                class="material-symbols-outlined text-primary">groups</span></div>
+                        <div>
+                            <h4 class="font-bold text-xl">Kolaboratif</h4>
+                            <p class="text-sm text-slate-400">Membangun jaringan antar mentor dan pelaku usaha.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-3">Siapa Kami?</h2>
+                <h3 class="text-3xl lg:text-5xl font-black text-navy leading-tight mb-6">Membangun Kemandirian Ekonomi
+                    Melalui Pemberdayaan</h3>
+                <p class="text-slate-600 text-lg leading-relaxed mb-6">
+                    Giat Muda Entrepreneur (GME) adalah lembaga pengembang bisnis yang berfokus pada digitalisasi UMKM.
+                    Kami percaya setiap individu punya peluang sukses yang sama di era digital jika memiliki sistem yang
+                    benar.
+                </p>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary font-bold">check_circle</span>
+                        <span class="font-bold text-navy">Berorientasi Hasil</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary font-bold">check_circle</span>
+                        <span class="font-bold text-navy">Inovatif</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="layanan" class="py-20 lg:py-32 px-6 bg-background-gray">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-3">Layanan Kami</h2>
+                <h3 class="text-3xl lg:text-5xl font-black text-navy">Solusi Digital Komprehensif</h3>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+                <div
+                    class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:border-primary/50 transition-colors group">
+                    <div
+                        class="w-14 h-14 bg-background-gray rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors">
+                        <span class="material-symbols-outlined text-primary text-3xl">school</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-navy mb-4">Edukasi Bisnis Digital</h4>
+                    <p class="text-slate-500 mb-6 leading-relaxed">Kurikulum praktis dari basic hingga scale-up untuk
+                        UMKM dan individu.</p>
+                    <ul class="space-y-3 text-sm font-medium text-slate-700">
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-primary text-sm">verified</span> Social Media
+                            Marketing</li>
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-primary text-sm">verified</span> Marketplace
+                            Optimization</li>
+                    </ul>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:border-primary/50 transition-colors group">
+                    <div
+                        class="w-14 h-14 bg-background-gray rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors">
+                        <span class="material-symbols-outlined text-primary text-3xl">hub</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-navy mb-4">Sistem Sales & Reseller</h4>
+                    <p class="text-slate-500 mb-6 leading-relaxed">Manajemen jaringan penjualan untuk memperluas
+                        distribusi produk secara masif.</p>
+                    <ul class="space-y-3 text-sm font-medium text-slate-700">
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-primary text-sm">verified</span> Dashboard Mitra
+                        </li>
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-primary text-sm">verified</span> Training
+                            Penjualan</li>
+                    </ul>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:border-primary/50 transition-colors group">
+                    <div
+                        class="w-14 h-14 bg-background-gray rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors">
+                        <span class="material-symbols-outlined text-primary text-3xl">ads_click</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-navy mb-4">Digital Marketing Agency</h4>
+                    <p class="text-slate-500 mb-6 leading-relaxed">Layanan optimasi iklan FB/IG Ads dan Google Ads
+                        berorientasi konversi.</p>
+                    <ul class="space-y-3 text-sm font-medium text-slate-700">
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-primary text-sm">verified</span> Copywriting &
+                            Design</li>
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-primary text-sm">verified</span> Iklan Berbayar
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mitra" class="py-20 lg:py-32 px-6 bg-navy text-white relative">
+        <div class="max-w-4xl mx-auto">
+            <div
+                class="bg-navy-light rounded-[3rem] p-10 lg:p-16 border border-slate-700 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-primary px-8 py-2 rounded-bl-3xl font-bold text-sm">PROGRAM
+                    UNGGULAN</div>
+                <div class="text-center mb-10">
+                    <h3 class="text-3xl lg:text-5xl font-black mb-4">Gabung Menjadi Mitra GME</h3>
+                    <p class="text-slate-400 text-lg">Mulai bisnis Anda hari ini dengan dukungan penuh dari ekosistem
+                        kami.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 mb-10">
+                    <div class="space-y-4">
+                        <div class="flex gap-4 items-center">
+                            <span
+                                class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">payments</span>
+                            <span class="font-bold">Komisi Penjualan Tinggi</span>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <span
+                                class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">campaign</span>
+                            <span class="font-bold">Support Marketing Kit</span>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex gap-4 items-center">
+                            <span
+                                class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">psychology</span>
+                            <span class="font-bold">Bimbingan Intensif Mingguan</span>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <span
+                                class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">auto_graph</span>
+                            <span class="font-bold">Sistem Reward & Jenjang Karir</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://wa.me/6282242996854?text=Hallo%20kak,%20saya%20mau%20tanya%20lebih%20lanjut%20terkait%20kemitraan%20di%20GME?"
+                    target="_blank"
+                    class="w-full bg-primary hover:bg-primary-dark text-white font-bold text-xl py-5 rounded-2xl shadow-lg shadow-primary/20 transition-all flex items-center justify-center gap-3">
+                    Daftar Mitra Sekarang <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="py-20 lg:py-32 px-6 bg-background-gray">
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <div>
+                    <h2 class="text-3xl lg:text-5xl font-black text-navy mb-4">Siap Melejitkan <br> Bisnis Anda?</h2>
+                    <p class="text-slate-500 text-lg leading-relaxed">Hubungi tim konsultan kami untuk mendiskusikan
+                        strategi digital yang paling tepat bagi UMKM atau perusahaan Anda.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="bg-white p-6 rounded-2xl flex items-center gap-5 border border-slate-200">
+                        <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined">mail</span>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-bold uppercase tracking-wider">Email</p>
+                            <p class="font-bold text-navy">gmepreneur@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl flex items-center gap-5 border border-slate-200">
+                        <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined">chat</span>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-bold uppercase tracking-wider">WhatsApp</p>
+                            <p class="font-bold text-navy">+62 812 3456 7890</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-8 lg:p-10 rounded-[2rem] shadow-xl border border-slate-100">
+                <form id="contact-form" class="space-y-5">
+                    <div>
+                        <label class="block text-sm font-bold text-navy mb-2">Nama Lengkap</label>
+                        <input type="text"
+                            class="w-full bg-background-gray border-none rounded-xl p-4 focus:ring-2 focus:ring-primary"
+                            placeholder="Contoh: Elyas Nur Faturrochim">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-navy mb-2">Email Bisnis</label>
+                        <input type="email"
+                            class="w-full bg-background-gray border-none rounded-xl p-4 focus:ring-2 focus:ring-primary"
+                            placeholder="elyasnf10@gmail.com">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-navy mb-2">Pesan/Kebutuhan</label>
+                        <textarea rows="4"
+                            class="w-full bg-background-gray border-none rounded-xl p-4 focus:ring-2 focus:ring-primary"
+                            placeholder="Jelaskan kebutuhan bisnis Anda..."></textarea>
+                    </div>
+                    <button
+                        class="w-full bg-navy hover:bg-navy-light text-white font-bold py-4 rounded-xl transition-all">Kirim
+                        Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navy py-12 px-6 border-t border-white/10">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-slate-500 text-sm font-medium">&copy; 2019-2026 Giat Muda Entrepreneur. Seluruh hak cipta
+                dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="css/js/script.js"></script>
+</body>
+
+</html>
